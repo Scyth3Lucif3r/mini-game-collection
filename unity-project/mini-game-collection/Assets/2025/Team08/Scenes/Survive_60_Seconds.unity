@@ -381,6 +381,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.04, y: 0.81}
   m_EdgeRadius: 0
+--- !u!114 &207369438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207369434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32094e205f32fc47b63557c09441b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 1801715664}
+  <PlayerID>k__BackingField: 1
+  <BulletPrefab>k__BackingField: {fileID: 0}
+  <Rigidbody2D>k__BackingField: {fileID: 0}
+  <ScoreKeeper>k__BackingField: {fileID: 0}
+  <BulletSpeed>k__BackingField: 8
+  <ShipSpeed>k__BackingField: 10
+  <MinMaxY>k__BackingField: 4
+  <CanShoot>k__BackingField: 0
 --- !u!1 &215467166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +3007,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 207369437}
+    - targetCorrespondingSourceObject: {fileID: 7038445961773935989, guid: bd638672158c63b488d1c5ee38126e23,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207369438}
   m_SourcePrefab: {fileID: 100100000, guid: bd638672158c63b488d1c5ee38126e23, type: 3}
 --- !u!1001 &3306715216087540020
 PrefabInstance:
@@ -3063,8 +3088,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8690565102049912378, guid: 92752e5446ef6c5448272877707e78d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3306715216087540022}
   m_SourcePrefab: {fileID: 100100000, guid: 92752e5446ef6c5448272877707e78d6, type: 3}
+--- !u!1 &3306715216087540021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8690565102049912378, guid: 92752e5446ef6c5448272877707e78d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3306715216087540020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3306715216087540022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306715216087540021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32094e205f32fc47b63557c09441b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 1801715664}
+  <PlayerID>k__BackingField: 0
+  <BulletPrefab>k__BackingField: {fileID: 0}
+  <Rigidbody2D>k__BackingField: {fileID: 0}
+  <ScoreKeeper>k__BackingField: {fileID: 0}
+  <BulletSpeed>k__BackingField: 8
+  <ShipSpeed>k__BackingField: 10
+  <MinMaxY>k__BackingField: 4
+  <CanShoot>k__BackingField: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
