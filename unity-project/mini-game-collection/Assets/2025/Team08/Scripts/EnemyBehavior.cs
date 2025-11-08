@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+
     //enemy's speed
     public float moveSpeed = 5f;
-
+    public float direction;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,12 @@ public class EnemyBehavior : MonoBehaviour
     {
         //Move the enemy's position
         Vector3 currentPosition = transform.position;
+        //moveSpeed = 5f * direction;
         //Edit this to determine direction
-        currentPosition.y += moveSpeed * Time.deltaTime;
+        currentPosition.x += moveSpeed * Time.deltaTime;
         transform.position = currentPosition;
         //Delete Enemy once it's reached a certain point
-        if (currentPosition.y >= 10) {
+        if (currentPosition.x >= -1 && currentPosition.x <= 1) {
             Destroy(gameObject);
         }
     }
