@@ -6,7 +6,6 @@ using System.Timers;
 
 public class EnemySpawner2 : MonoBehaviour
 {
-    EnemyBehavior behavior = new EnemyBehavior();
     //Spawn points
     public Transform[] spawnPoints;
     public GameObject enemy;
@@ -18,15 +17,15 @@ public class EnemySpawner2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnEnemy();
+        SpawnEnemy();
     }
 
     void Update()
     {
-        wait();
+        Wait();
     }
 
-    public void spawnEnemy()
+    public void SpawnEnemy()
     {
         int newSpawnIndex;
         do
@@ -35,15 +34,14 @@ public class EnemySpawner2 : MonoBehaviour
         } while (newSpawnIndex == lastSpawnIndex);
         lastSpawnIndex = newSpawnIndex;
         Instantiate(enemy, spawnPoints[lastSpawnIndex].position, Quaternion.identity);
-        //behavior.direction = -1;
     }
 
-    public void wait()
+    public void Wait()
     {
         spawnTimer++;
         if (spawnTimer % enemyFrequency == 0)
         {
-            spawnEnemy();
+            SpawnEnemy();
         }
 
         if (spawnTimer % 1000 == 0)

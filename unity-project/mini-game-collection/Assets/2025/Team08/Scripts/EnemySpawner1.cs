@@ -6,7 +6,6 @@ using System.Timers;
 
 public class EnemySpawner1 : MonoBehaviour
 {
-    EnemyBehavior behavior = new EnemyBehavior();
     //Spawn points
     public Transform[] spawnPoints;
     public GameObject enemy;
@@ -35,7 +34,6 @@ public class EnemySpawner1 : MonoBehaviour
         } while (newSpawnIndex == lastSpawnIndex);
         lastSpawnIndex = newSpawnIndex;
         Instantiate(enemy, spawnPoints[lastSpawnIndex].position, Quaternion.identity);
-        //behavior.direction = 1;
     }
 
     public void wait()

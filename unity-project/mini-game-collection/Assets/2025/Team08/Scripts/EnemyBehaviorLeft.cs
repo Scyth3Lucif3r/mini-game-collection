@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyBehavior : MonoBehaviour
+public class EnemyBehaviorLeft : MonoBehaviour
 {
 
     //enemy's speed
@@ -21,12 +20,12 @@ public class EnemyBehavior : MonoBehaviour
         Vector3 currentPosition = transform.position;
         //moveSpeed = 5f * direction;
         //Edit this to determine direction
-        currentPosition.x += moveSpeed * Time.deltaTime;
+        currentPosition.x -= moveSpeed * Time.deltaTime;
         transform.position = currentPosition;
         //Delete Enemy once it's reached a certain point
-        if (currentPosition.x >= -1 && currentPosition.x <= 1) {
+        if (currentPosition.x >= -1 && currentPosition.x <= 1)
+        {
             Destroy(gameObject);
         }
     }
 }
-
