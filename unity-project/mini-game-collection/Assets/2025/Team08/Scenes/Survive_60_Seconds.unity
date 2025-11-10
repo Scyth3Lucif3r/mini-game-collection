@@ -563,14 +563,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MiniGameManager>k__BackingField: {fileID: 1801715664}
-  <PlayerID>k__BackingField: 1
-  <BulletPrefab>k__BackingField: {fileID: 0}
-  <Rigidbody2D>k__BackingField: {fileID: 0}
+  <PlayerID>k__BackingField: 0
+  <BulletPrefab>k__BackingField: {fileID: 4538164367392001492, guid: b6bd8f88f741ded4d83610823a292f24,
+    type: 3}
+  <Rigidbody2D>k__BackingField: {fileID: 207369439}
   <ScoreKeeper>k__BackingField: {fileID: 0}
   <BulletSpeed>k__BackingField: 8
   <ShipSpeed>k__BackingField: 10
   <MinMaxY>k__BackingField: 4
   <CanShoot>k__BackingField: 0
+--- !u!50 &207369439
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207369434}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &215467166
 GameObject:
   m_ObjectHideFlags: 0
@@ -7825,7 +7853,7 @@ PrefabInstance:
     - target: {fileID: 7038445961773935989, guid: bd638672158c63b488d1c5ee38126e23,
         type: 3}
       propertyPath: m_Name
-      value: playerBlue2
+      value: playerBlue1
       objectReference: {fileID: 0}
     - target: {fileID: 7755497833532718191, guid: bd638672158c63b488d1c5ee38126e23,
         type: 3}
@@ -7889,6 +7917,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 207369438}
+    - targetCorrespondingSourceObject: {fileID: 7038445961773935989, guid: bd638672158c63b488d1c5ee38126e23,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207369439}
   m_SourcePrefab: {fileID: 100100000, guid: bd638672158c63b488d1c5ee38126e23, type: 3}
 --- !u!1001 &3306715216087540020
 PrefabInstance:
@@ -7961,7 +7993,7 @@ PrefabInstance:
     - target: {fileID: 8690565102049912378, guid: 92752e5446ef6c5448272877707e78d6,
         type: 3}
       propertyPath: m_Name
-      value: playerRed1
+      value: playerRed2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7971,6 +8003,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3306715216087540022}
+    - targetCorrespondingSourceObject: {fileID: 8690565102049912378, guid: 92752e5446ef6c5448272877707e78d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3306715216087540023}
   m_SourcePrefab: {fileID: 100100000, guid: 92752e5446ef6c5448272877707e78d6, type: 3}
 --- !u!1 &3306715216087540021 stripped
 GameObject:
@@ -7991,14 +8027,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MiniGameManager>k__BackingField: {fileID: 1801715664}
-  <PlayerID>k__BackingField: 0
-  <BulletPrefab>k__BackingField: {fileID: 0}
-  <Rigidbody2D>k__BackingField: {fileID: 0}
+  <PlayerID>k__BackingField: 1
+  <BulletPrefab>k__BackingField: {fileID: 6402966615391357958, guid: 69b226560bef2054ab51ee4b617a2045,
+    type: 3}
+  <Rigidbody2D>k__BackingField: {fileID: 3306715216087540023}
   <ScoreKeeper>k__BackingField: {fileID: 0}
   <BulletSpeed>k__BackingField: 8
   <ShipSpeed>k__BackingField: 10
   <MinMaxY>k__BackingField: 4
   <CanShoot>k__BackingField: 0
+--- !u!50 &3306715216087540023
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306715216087540021}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
