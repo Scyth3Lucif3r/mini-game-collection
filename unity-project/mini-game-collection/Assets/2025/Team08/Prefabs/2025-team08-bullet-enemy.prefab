@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5796209252289982488}
   - component: {fileID: 2290231114809248066}
   - component: {fileID: 4705789048943688052}
+  - component: {fileID: 4852337369162733131}
   m_Layer: 0
   m_Name: 2025-team08-bullet-enemy
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bfb43e2cf589446abc5949ebb6fd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 0}
   <Owner>k__BackingField: 3
   <Rigidbody2D>k__BackingField: {fileID: 4705789048943688052}
   <SelfDestructTime>k__BackingField: 10
@@ -166,3 +168,15 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4852337369162733131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6724552290790239898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99516fd6ce19294891b68eb77e0398b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
