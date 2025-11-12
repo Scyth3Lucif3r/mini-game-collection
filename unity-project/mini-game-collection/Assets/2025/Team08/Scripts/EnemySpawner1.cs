@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using System.Timers;
+
+public class EnemySpawner1 : MonoBehaviour
+{
+    //Spawn points
+    public Transform[] spawnPoints;
+    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+    public GameObject enemy4;
+    public GameObject enemy5;
+    public int lastSpawnIndex = -1;
+    //Timer for the enemy's spawn
+    public int spawnTimer = 0;
+    //Edit this to have more enemies spawning at once
+    public int enemyFrequency = 1000;
+    // Start is called before the first frame update
+    void Start()
+    {
+        spawnEnemy();
+    }
+
+    void Update()
+    {
+        wait();
+    }
+
+    public void spawnEnemy()
+    {
+        int randomizer = Random.Range(0, 5);
+        if (randomizer >= 0 && randomizer <= 2)
+        {
+            enemy = enemy1;
+        }
+        else if (randomizer == 3)
+        {
+            enemy = enemy2;
+        }
+        else if (randomizer == 4) {
+            enemy = enemy3;
+        
+        }
+            int newSpawnIndex;
+        do
+        {
+            newSpawnIndex = Random.Range(0, spawnPoints.Length);
+        } while (newSpawnIndex == lastSpawnIndex);
+        lastSpawnIndex = newSpawnIndex;
+        Instantiate(enemy, spawnPoints[lastSpawnIndex].position, Quaternion.identity);
+    }
+
+    public void wait()
+    {
+        spawnTimer++;
+        if (spawnTimer % enemyFrequency == 0)
+        {
+            spawnEnemy();
+        }
+
+        if (spawnTimer % 1000 == 0)
+        {
+            enemyFrequency += 1000;
+        }
+    }
+}
