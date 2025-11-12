@@ -4,13 +4,13 @@
 
 **Concept**
 
-The concept for our game is that two players must work with each other to fend off waves of attacking enemies for 30-60 seconds in a hectic and chaotic co-op experience.
+The concept for our game is that two players must work with each other to fend off waves of various attacking enemies for 60 seconds in a hectic and chaotic co-op experience.
 
 
 
 **Setting**
 
-The setting will most likely take place in space, with the players being space ships and the enemies being aliens.
+The players will find themselves in the void of space, with help on the way, but not soon enough, and so the players will have to work together to survive unntil help arrives. 
 
 
 
@@ -22,11 +22,11 @@ The game would start with a simple explanation for key game mechanics and button
 
 **Players**
 
-This game is strictly 2 player co-op, it's impossible to beat with only one player.
+This game is strictly 2 player co-op, it's impossible to beat with only one player. While most enemies can be destroyed by either player, there a some that can only be hurt by one player, indicated by their colour being similar to one of the players. 
 
 
 
 **Actions**
 
-Each player can move up and down on the screen and fire normal bullets that damage purple enemies and enemies of the same color. The red player has a special fireball that deals high damage with splash, meanwhile the blue player has a special freezing move, where all enemies on screen will be temporarily frozen. Both special moves have a cooldown.
+Each player can move up and down on the screen and fire normal bullets that damage purple enemies and enemies of the same color. The red player has a special fireball that deals high damage with splash, meanwhile the blue player has a special freezing move, where all enemies on screen will be temporarily frozen. Both special moves have a cooldown. Each player can also jump to the other side of the screen to help eliminate their unique enemies on that side, should they show up.
 
