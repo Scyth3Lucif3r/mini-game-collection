@@ -58,11 +58,11 @@ public class HitReaction2D_NoTags : MonoBehaviour
     {
         isProcessingHit = true;
 
-        // --- LOCK MOVEMENT ---
+        // Lock player movement
         SetControllersEnabled(false);
         FreezeRB2D(true);
 
-        // Optional: stop any existing velocity immediately.
+        // Stop any existing velocity
         if (rb) rb.velocity = Vector2.zero;
 
         // 1) Explosion sprite
@@ -70,14 +70,14 @@ public class HitReaction2D_NoTags : MonoBehaviour
         yield return new WaitForSeconds(explosionSeconds);
 
         // 2) Invisible window
-        sr.enabled = false; // (or set sr.sprite = null if you prefer keeping renderer enabled)
+        sr.enabled = false;
         yield return new WaitForSeconds(invisibleSeconds);
 
         // 3) Restore player sprite
         sr.enabled = true;
         sr.sprite = playerSprite;
 
-        // --- UNLOCK MOVEMENT ---
+        //Unlock the player controller
         FreezeRB2D(false);
         SetControllersEnabled(true);
 
