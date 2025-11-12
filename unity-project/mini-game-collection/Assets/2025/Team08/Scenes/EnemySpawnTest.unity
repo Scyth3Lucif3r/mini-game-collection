@@ -330,7 +330,9 @@ MonoBehaviour:
   - {fileID: 316426729}
   - {fileID: 155738966}
   - {fileID: 1737798252}
-  enemy: {fileID: 2314664199958423080, guid: 0602794e7fd0ce044b9fb535216b0e65, type: 3}
+  enemy: {fileID: 0}
+  enemy1: {fileID: 2314664199958423080, guid: 0602794e7fd0ce044b9fb535216b0e65, type: 3}
+  enemy2: {fileID: 6486225937908564331, guid: af6eadcaa58261549999d7606859b5fd, type: 3}
   lastSpawnIndex: -1
   spawnTimer: 0
   enemyFrequency: 1000
@@ -762,7 +764,9 @@ MonoBehaviour:
   - {fileID: 219938986}
   - {fileID: 90982845}
   - {fileID: 1182995323}
-  enemy: {fileID: 2314664199958423080, guid: cf6693ef6a8046d49a49c8414d144099, type: 3}
+  enemy: {fileID: 0}
+  enemy1: {fileID: 2314664199958423080, guid: cf6693ef6a8046d49a49c8414d144099, type: 3}
+  enemy2: {fileID: 6486225937908564331, guid: 2ec2398be0815034eb1c7bbecb209440, type: 3}
   lastSpawnIndex: -1
   spawnTimer: 0
   enemyFrequency: 1000

@@ -9,6 +9,8 @@ public class EnemySpawner2 : MonoBehaviour
     //Spawn points
     public Transform[] spawnPoints;
     public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
     public int lastSpawnIndex = -1;
     //Timer for the enemy's spawn
     public int spawnTimer = 0;
@@ -27,6 +29,15 @@ public class EnemySpawner2 : MonoBehaviour
 
     public void SpawnEnemy()
     {
+        int randomizer = Random.Range(0, 4);
+        if (randomizer >= 0 && randomizer <= 2)
+        {
+            enemy = enemy1;
+        }
+        if (randomizer == 3)
+        {
+            enemy = enemy2;
+        }
         int newSpawnIndex;
         do
         {

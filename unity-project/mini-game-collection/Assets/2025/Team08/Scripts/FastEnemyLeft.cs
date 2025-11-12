@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FastEnemyRight : MonoBehaviour
+public class FastEnemyLeft : MonoBehaviour
 {
-
     //enemy's speed
     public float moveSpeed = 4f;
     public float jumpSpeed = 4f;
@@ -22,7 +21,7 @@ public class FastEnemyRight : MonoBehaviour
         //Move the enemy's position
         Vector3 currentPosition = transform.position;
         //moveSpeed = 5f * direction;
-        currentPosition.x += moveSpeed * Time.deltaTime;
+        currentPosition.x -= moveSpeed * Time.deltaTime;
         currentPosition.y += jumpSpeed * Time.deltaTime;
         transform.position = currentPosition;
         if (currentPosition.y > ogPosition.y + 3)
