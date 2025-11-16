@@ -9,12 +9,20 @@ namespace MiniGameCollection.Games2025.Team08
     {
         [field: SerializeField] MiniGameManager MiniGameManager;
 
+        [Header("UI")]
         public GameObject GameUI;
         public GameObject StartGameUI;
+
+        [Header("Players")]
         public GameObject P1Ready;
         public GameObject P2Ready;
+
+        [Header("Examples")]
+        public GameObject InfoScreen;
+
         public bool p1Ready = false;
         public bool p2Ready = false;
+
         public bool hasGameStarted = false;
 
         void Update()
@@ -47,6 +55,7 @@ namespace MiniGameCollection.Games2025.Team08
             hasGameStarted = true;
             P1Ready.gameObject.SetActive(false);
             P2Ready.gameObject.SetActive(false);
+            InfoScreen.gameObject.SetActive(false);
             MiniGameManager.StartGame();
         }
     }
