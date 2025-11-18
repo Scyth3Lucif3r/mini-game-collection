@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Timers;
-
+namespace MiniGameCollection.Games2025.Team08 {
 public class EnemySpawner2 : MonoBehaviour
 {
     //Spawn points
@@ -58,7 +58,7 @@ public class EnemySpawner2 : MonoBehaviour
         {
             enemy = enemy6;
         }
-            int newSpawnIndex;
+        int newSpawnIndex;
         do
         {
             newSpawnIndex = Random.Range(0, spawnPoints.Length);
@@ -86,5 +86,6 @@ public class EnemySpawner2 : MonoBehaviour
         SpawnEnemy();
         yield return new WaitForSeconds(10f);
     }
+}
 }
 
