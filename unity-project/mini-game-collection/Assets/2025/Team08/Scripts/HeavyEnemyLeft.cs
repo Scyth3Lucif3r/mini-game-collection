@@ -2,29 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeavyEnemyLeft : MonoBehaviour
+namespace MiniGameCollection.Games2025.Team08
 {
-    //enemy's speed
-    public float moveSpeed = 0.5f;
-    // Start is called before the first frame update
-    void Start()
+    public class HeavyEnemyLeft : MonoBehaviour
     {
-        transform.localEulerAngles = new Vector3(0, 0, -90);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Move the enemy's position
-        Vector3 currentPosition = transform.position;
-        //moveSpeed = 5f * direction;
-        //Edit this to determine direction
-        currentPosition.x -= moveSpeed * Time.deltaTime;
-        transform.position = currentPosition;
-        //Delete Enemy once it's reached a certain point
-        if (currentPosition.x >= -1 && currentPosition.x <= 1)
+        //enemy's speed
+        public float moveSpeed = 0.5f;
+        // Start is called before the first frame update
+        void Start()
         {
-            Destroy(gameObject);
+            transform.localEulerAngles = new Vector3(0, 0, -90);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            //Move the enemy's position
+            Vector3 currentPosition = transform.position;
+            //moveSpeed = 5f * direction;
+            //Edit this to determine direction
+            currentPosition.x -= moveSpeed * Time.deltaTime;
+            transform.position = currentPosition;
+            //Delete Enemy once it's reached a certain point
+            if (currentPosition.x >= -1 && currentPosition.x <= 1)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

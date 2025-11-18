@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Enemies : MonoBehaviour
+namespace MiniGameCollection.Games2025.Team08
 {
-    void Start()
+    public class Enemies : MonoBehaviour
     {
-        
-    }
-
-    void Update()
-    {
-        if (transform.position.x >= -2 && transform.position.x <= 2 )
+        void Start()
         {
-            SceneManager.LoadScene("Game Over");
+
+        }
+
+        void Update()
+        {
+            if (transform.position.x >= -2 && transform.position.x <= 2)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
         }
     }
 }
