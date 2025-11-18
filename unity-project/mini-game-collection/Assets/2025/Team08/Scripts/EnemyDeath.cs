@@ -69,6 +69,8 @@ public class EnemyDeath : MonoBehaviour
         if (explosionSprite) { sr.enabled = true; sr.sprite = explosionSprite; }
         yield return new WaitForSeconds(explosionSeconds);
 
+        Destroy(gameObject);
+
         // 2) Invisible window
         sr.enabled = false;
         yield return new WaitForSeconds(invisibleSeconds);

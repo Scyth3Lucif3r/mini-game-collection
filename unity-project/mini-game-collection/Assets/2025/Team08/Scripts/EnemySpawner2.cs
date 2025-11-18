@@ -23,7 +23,7 @@ public class EnemySpawner2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy();
+        Delay();
     }
 
     void Update()
@@ -79,6 +79,12 @@ public class EnemySpawner2 : MonoBehaviour
         {
             enemyFrequency += 1000;
         }
+    }
+
+    private System.Collections.IEnumerator Delay()
+    {
+        SpawnEnemy();
+        yield return new WaitForSeconds(10f);
     }
 }
 

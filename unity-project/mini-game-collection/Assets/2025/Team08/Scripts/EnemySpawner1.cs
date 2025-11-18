@@ -21,9 +21,9 @@ public class EnemySpawner1 : MonoBehaviour
     //Edit this to have more enemies spawning at once
     public int enemyFrequency = 1000;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        spawnEnemy();
+        Delay();
     }
 
     void Update()
@@ -80,5 +80,11 @@ public class EnemySpawner1 : MonoBehaviour
         {
             enemyFrequency += 1000;
         }
+    }
+
+    private System.Collections.IEnumerator Delay()
+    {
+        spawnEnemy();
+        yield return new WaitForSeconds(10f);
     }
 }

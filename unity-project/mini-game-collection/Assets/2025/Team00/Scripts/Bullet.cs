@@ -72,7 +72,7 @@ namespace MiniGameCollection.Games2025.Team00
                         if (bulletOwnerPlayerID != player.PlayerID)
                         {
                             // Reduce other player's score
-                            ScoreKeeper.AddScore(player.PlayerID, this.PointPenalty);
+                            //ScoreKeeper.AddScore(player.PlayerID, this.PointPenalty);
                             // Destroy this bullet
                             DestroyBullet();
                         }

@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprite: {fileID: 0}
-  explosionSprite: {fileID: 0}
+  playerSprite: {fileID: 21300000, guid: dd09cb7024326d34f91e9c5d7071b3f2, type: 3}
+  explosionSprite: {fileID: 21300000, guid: 58d97668015cf1843a8a2e11d4ae6691, type: 3}
   explosionSeconds: 0.5
   invisibleSeconds: 1.5
   controllersToDisable: []

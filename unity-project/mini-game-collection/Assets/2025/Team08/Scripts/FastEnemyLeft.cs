@@ -5,8 +5,8 @@ using UnityEngine;
 public class FastEnemyLeft : MonoBehaviour
 {
     //enemy's speed
-    public float moveSpeed = 4f;
-    public float jumpSpeed = 4f;
+    public float moveSpeed = 2f;
+    public float jumpSpeed = 2f;
 
     Vector3 ogPosition;
     // Start is called before the first frame update

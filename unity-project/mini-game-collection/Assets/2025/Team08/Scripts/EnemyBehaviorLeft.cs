@@ -6,7 +6,7 @@ public class EnemyBehaviorLeft : MonoBehaviour
 {
 
     //enemy's speed
-    public float moveSpeed = 3f;
+    public float moveSpeed = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
