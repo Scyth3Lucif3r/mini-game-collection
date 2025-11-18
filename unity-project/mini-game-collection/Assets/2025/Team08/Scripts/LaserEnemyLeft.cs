@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaserEnemyLeft : MonoBehaviour
 {
     //enemy's speed
-    public float moveSpeed = 1.5f;
+    public float moveSpeed = 1f;
     int fireTimer = 0;
     public GameObject laser;
     // Start is called before the first frame update
