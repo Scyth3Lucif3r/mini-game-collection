@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1684373609858943165}
   - component: {fileID: 4796406227093818569}
   - component: {fileID: -2685143873120426670}
+  - component: {fileID: -574007621328970318}
+  - component: {fileID: 1790585254425763696}
   m_Layer: 0
   m_Name: BasicRIghtEnemy
   m_TagString: Untagged
@@ -98,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8790149421b6744ae4f22b77e9c87b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 1
 --- !u!61 &-2685143873120426670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +146,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.12, y: 0.84}
   m_EdgeRadius: 0
+--- !u!114 &-574007621328970318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314664199958423080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c583acb20040f3144be38f5586b803c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1790585254425763696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314664199958423080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 21300000, guid: 9a51f753478a63b4eb9909c7f36f1010, type: 3}
+  explosionSprite: {fileID: 21300000, guid: 58d97668015cf1843a8a2e11d4ae6691, type: 3}
+  explosionSeconds: 0.5
+  invisibleSeconds: 1.5
+  controllersToDisable: []
+  freezeRigidbody2D: 1

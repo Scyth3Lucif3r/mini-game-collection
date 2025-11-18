@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5662282232452316235}
   - component: {fileID: 1269489143782415665}
   - component: {fileID: 1736504743859641265}
+  - component: {fileID: -1342167882136435702}
+  - component: {fileID: 70117031055457350}
   m_Layer: 0
   m_Name: LaserEnemyLeft
   m_TagString: Untagged
@@ -130,3 +132,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.82, y: 0.84}
   m_EdgeRadius: 0
+--- !u!114 &-1342167882136435702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705575254501024045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c583acb20040f3144be38f5586b803c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &70117031055457350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705575254501024045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 21300000, guid: c80d11c6ee8fa8b41a791ae9d4174444, type: 3}
+  explosionSprite: {fileID: 21300000, guid: 58d97668015cf1843a8a2e11d4ae6691, type: 3}
+  explosionSeconds: 0.5
+  invisibleSeconds: 1.5
+  controllersToDisable: []
+  freezeRigidbody2D: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HeavyEnemyLeft : MonoBehaviour
 {
     //enemy's speed
-    public float moveSpeed = 1.5f;
+    public float moveSpeed = 0.5f;
     // Start is called before the first frame update
     void Start()
     {

@@ -334,8 +334,9 @@ MonoBehaviour:
   enemy1: {fileID: 2314664199958423080, guid: 0602794e7fd0ce044b9fb535216b0e65, type: 3}
   enemy2: {fileID: 6486225937908564331, guid: af6eadcaa58261549999d7606859b5fd, type: 3}
   enemy3: {fileID: 574294865043190483, guid: dd13a1e7d88552747b3a527fd4682927, type: 3}
-  enemy4: {fileID: 0}
-  enemy5: {fileID: 0}
+  enemy4: {fileID: 5578197387313538981, guid: 61e695407b355b849bab1f0f0d2fca54, type: 3}
+  enemy5: {fileID: 9105006143421557719, guid: 72d554aeb93621c48b2d980116c5fd0a, type: 3}
+  enemy6: {fileID: 6705575254501024045, guid: f2d2c3f4a421e374ea746a7c5b9092f7, type: 3}
   lastSpawnIndex: -1
   spawnTimer: 0
   enemyFrequency: 1000
@@ -771,8 +772,9 @@ MonoBehaviour:
   enemy1: {fileID: 2314664199958423080, guid: cf6693ef6a8046d49a49c8414d144099, type: 3}
   enemy2: {fileID: 6486225937908564331, guid: 2ec2398be0815034eb1c7bbecb209440, type: 3}
   enemy3: {fileID: 574294865043190483, guid: a3fc1c037cf644b4295fda9a48d94942, type: 3}
-  enemy4: {fileID: 0}
-  enemy5: {fileID: 0}
+  enemy4: {fileID: 5578197387313538981, guid: 6e1f58371a8ef92498ba08488daeb93a, type: 3}
+  enemy5: {fileID: 9105006143421557719, guid: 25cdd05f9f040054f8586a6856420352, type: 3}
+  enemy6: {fileID: 6705575254501024045, guid: 8be83fb09f353d64b932c603aef6fedd, type: 3}
   lastSpawnIndex: -1
   spawnTimer: 0
   enemyFrequency: 1000

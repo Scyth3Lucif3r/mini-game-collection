@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2316379207596688349}
   - component: {fileID: 7314239480320820441}
   - component: {fileID: -4540208264066713021}
+  - component: {fileID: 7494329676963126195}
+  - component: {fileID: -3296796257830786624}
   m_Layer: 0
   m_Name: RedEnemyLeft
   m_TagString: Untagged
@@ -143,4 +145,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6a58e2d034a9f4ca74ad3462e6e5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 1
+--- !u!114 &7494329676963126195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105006143421557719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c583acb20040f3144be38f5586b803c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3296796257830786624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105006143421557719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 21300000, guid: 91e0326985cf6c94baf148d2e7b53752, type: 3}
+  explosionSprite: {fileID: 21300000, guid: 58d97668015cf1843a8a2e11d4ae6691, type: 3}
+  explosionSeconds: 0.5
+  invisibleSeconds: 1.5
+  controllersToDisable: []
+  freezeRigidbody2D: 0
