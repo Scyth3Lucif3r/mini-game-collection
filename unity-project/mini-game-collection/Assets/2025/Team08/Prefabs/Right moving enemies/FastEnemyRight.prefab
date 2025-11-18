@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6278822042018473143}
   - component: {fileID: 6169610719790160171}
   - component: {fileID: -1826736958779124464}
+  - component: {fileID: 1233911193120973044}
+  - component: {fileID: 3420955294410494768}
   m_Layer: 0
   m_Name: FastEnemyRight
   m_TagString: Untagged
@@ -145,3 +147,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   jumpSpeed: 4
+--- !u!114 &1233911193120973044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486225937908564331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c583acb20040f3144be38f5586b803c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3420955294410494768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486225937908564331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 0}
+  explosionSprite: {fileID: 0}
+  explosionSeconds: 0.5
+  invisibleSeconds: 1.5
+  controllersToDisable: []
+  freezeRigidbody2D: 1

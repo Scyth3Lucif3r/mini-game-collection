@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3066379473908127193}
   - component: {fileID: 4203541594326290323}
   - component: {fileID: -7166913557929074516}
+  - component: {fileID: -2660475937870391362}
+  - component: {fileID: -5175721027880320875}
   m_Layer: 0
   m_Name: BlueEnemyLeft
   m_TagString: Untagged
@@ -144,3 +146,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &-2660475937870391362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578197387313538981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c583acb20040f3144be38f5586b803c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5175721027880320875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578197387313538981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2839edb8db27042ac3ef44fa411bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 0}
+  explosionSprite: {fileID: 0}
+  explosionSeconds: 0.5
+  invisibleSeconds: 1.5
+  controllersToDisable: []
+  freezeRigidbody2D: 1
