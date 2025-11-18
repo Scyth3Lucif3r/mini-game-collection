@@ -58,6 +58,10 @@ public class EnemyDeath : MonoBehaviour
     {
         isProcessingHit = true;
 
+        // Lock player movement
+        SetControllersEnabled(false);
+        FreezeRB2D(true);
+
         // Stop any existing velocity
         if (rb) rb.velocity = Vector2.zero;
 
@@ -65,7 +69,13 @@ public class EnemyDeath : MonoBehaviour
         if (explosionSprite) { sr.enabled = true; sr.sprite = explosionSprite; }
         yield return new WaitForSeconds(explosionSeconds);
 
+        // 2) Invisible window
+        sr.enabled = false;
+        yield return new WaitForSeconds(invisibleSeconds);
+
         isProcessingHit = false;
+
+        Destroy(gameObject);
     }
 
     private void SetControllersEnabled(bool enabled)
